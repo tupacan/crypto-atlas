@@ -168,7 +168,7 @@ const CryptoDetails = () => {
                             <Title level={5} className="link-name">
                                 {link.type}
                             </Title>
-                            <a href={link.url} target="_blank" rel="noopener">
+                            <a href={link.url} target="_blank" rel="noopener noreferrer">
                                 {link.name}
                             </a>
                         </Row>

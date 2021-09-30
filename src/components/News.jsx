@@ -51,7 +51,7 @@ const News = ({ simplified }) => {
                         href={news.url}
                         style={{ display: "block" }}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                     >
                         <Card hoverable className="news-card">
                             <div className="news-image-container">
