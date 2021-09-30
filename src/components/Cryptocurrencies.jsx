@@ -23,8 +23,6 @@ const Cryptocurrencies = ({ simplified }) => {
 
     if (isFetching) return <Loader />;
 
-    // console.log(cryptos);
-
     return (
         <>
             {!simplified && (
