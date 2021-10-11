@@ -36,7 +36,7 @@ const Navbar = () => {
     return (
         <div className="nav-container">
             <div className="logo-container">
-                <Avatar src={icon} size={50} />
+                <Avatar src={icon} size={{ xs: 25, sm: 28, md: 30, lg: 32, xl: 40, xxl: 50 }} />
                 <Typography.Title level={2} className="logo">
                     <Link to="/" className="logo-link">
                         CryptoAtlas

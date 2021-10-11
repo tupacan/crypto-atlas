@@ -31,8 +31,6 @@ const CryptoDetails = () => {
 
     if (isFetching) return <Loader />;
 
-    console.log(cryptoDetails);
-
     const time = ["3h", "24h", "7d", "3m", "30d", "1y", "3y", "5y"];
 
     const stats = [

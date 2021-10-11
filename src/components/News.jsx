@@ -46,7 +46,7 @@ const News = ({ simplified }) => {
             )}
 
             {cryptoNews.value.map((news, i) => (
-                <Col xs={24} sm={12} lg={8} key={i}>
+                <Col xs={24} md={12} xxl={8} key={i}>
                     <a
                         href={news.url}
                         style={{ display: "block" }}
@@ -73,14 +73,16 @@ const News = ({ simplified }) => {
                                     ? `${news.description.substring(0, 180)}...`
                                     : news.description}
                             </p>
-                            <div className="provider-container">
-                                <div>
+                            <div className="provider-meta">
+                                <div className="provider-container">
                                     <Avatar src={news.provider[0]?.image?.thumbnail?.contentUrl} />
                                     <Text className="provider-name">
                                         {news.provider[0]?.name || "Unknown"}
                                     </Text>
                                 </div>
-                                <Text>{moment(news.datePublished).startOf("ss").fromNow()}</Text>
+                                <Text className="published-time">
+                                    {moment(news.datePublished).startOf("ss").fromNow()}
+                                </Text>
                             </div>
                         </Card>
                     </a>
